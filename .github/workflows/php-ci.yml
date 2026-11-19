@@ -23,7 +23,10 @@ jobs:
       - name: Install Dependencies
         run: composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
-      - name: Lint code with Pint
+      - name: Format PHP code
+        run: ./vendor/bin/pint
+
+      - name: Check PHP code style
         run: ./vendor/bin/pint --test
 
       - name: Run unit tests
