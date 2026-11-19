@@ -2,19 +2,19 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
 use App\Services\Calculator;
+use PHPUnit\Framework\TestCase;
 
 class CalculatorTest extends TestCase
 {
-    public function test_add()
+    public function test_add(): void
     {
         $calculator = new Calculator();
 
         $this->assertEquals(5, $calculator->add(2, 3));
     }
 
-    public function test_subtract()
+    public function test_subtract(): void
     {
         $calculator = new Calculator();
 
