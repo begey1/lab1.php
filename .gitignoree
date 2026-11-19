@@ -1,6 +1,0 @@
-/vendor/
-/.env
-.phpunit.cache/
-.idea/
-.vscode/
-.DS_Store
